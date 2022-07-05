@@ -17,7 +17,7 @@ class Solution(object):
           x=x//10
           if(x==0):
             break
-          print(x,num)
+          #print(x,num)
 
         #print(nums) 
         s=""
