@@ -13,6 +13,5 @@ class Solution(object):
       """
       
       nums.sort()
-      print(nums)
       return(nums[-k])     
 
