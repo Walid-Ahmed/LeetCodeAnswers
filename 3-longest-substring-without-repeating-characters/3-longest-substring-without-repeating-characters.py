@@ -5,20 +5,19 @@ class Solution(object):
         :rtype: int
         """
         result=[]
-        tmp=[]
+        bestResult=[]
         if (len(s)==1):
             return 1
         for char in s:
           if char not in  result:
             result.append(char)
+            if(len(result))>len(bestResult):
+              bestResult = list(result)
           else:
-            if(len(result))>len(tmp):
-              tmp = list(result)
             index = result.index(char)  
             result=result[index+1::]
             result.append(char)
-            
-          if(len(result))>len(tmp):
-              tmp = list(result)
-        print(tmp)    
-        return(len(tmp)) 
+            #print(result)
+
+        #print(tmp)    
+        return(len(bestResult)) 
