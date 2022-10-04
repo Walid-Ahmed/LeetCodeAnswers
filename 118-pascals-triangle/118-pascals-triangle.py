@@ -12,14 +12,11 @@ class Solution(object):
             sublist[0]=1
             sublist[-1]=1
             prevSubList=allnums[row-1] #previous
-            print("[INFO] prevSubList {}".format(prevSubList))
             for j in range(0,len(prevSubList)-1):  
-                print("prevSubList[j] {} prevSubList[j+1 {}".format(prevSubList[j],prevSubList[j+1]))
                 element=prevSubList[j]+prevSubList[j+1]
                 sublist[j+1]=element
                            
             allnums.append(sublist)  
-            print(allnums)
         return allnums
                            
 
