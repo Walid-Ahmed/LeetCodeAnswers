@@ -15,8 +15,8 @@ class Solution(object):
         k=len(nums)
         if k==0: #empty list
             return 0
-        if k==1 and nums[0]==val: #single element list with element is val
-            return 0
+        #if k==1 and nums[0]==val: #single element list with element is val
+            #return 0
 
         while(left<=right):
             if nums[left]==val:
