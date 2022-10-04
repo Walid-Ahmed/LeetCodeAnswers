@@ -15,12 +15,12 @@ class Solution(object):
         k=len(nums)
         if k==0: #empty list
             return 0
-        #if k==1 and nums[0]==val: #single element list with element is val
-            #return 0
+
 
         while(left<=right):
             if nums[left]==val:
-                self.exchange(nums,left,right)
+                #self.exchange(nums,left,right)
+                nums[left],nums[right]=nums[right],nums[left]
                 right=right-1
 
             else:
