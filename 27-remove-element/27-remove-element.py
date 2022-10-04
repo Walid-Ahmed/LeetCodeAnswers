@@ -27,8 +27,7 @@ class Solution(object):
                 left=left+1
                 
         print(nums,left,right)
-        #if(left==0) and nums[left]==val:
-            #return 0
+
         return(left)
 
 
