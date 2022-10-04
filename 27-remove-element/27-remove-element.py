@@ -19,8 +19,7 @@ class Solution(object):
 
         while(left<=right):
             if nums[left]==val:
-                #self.exchange(nums,left,right)
-                nums[left],nums[right]=nums[right],nums[left]
+                self.exchange(nums,left,right)
                 right=right-1
 
             else:
