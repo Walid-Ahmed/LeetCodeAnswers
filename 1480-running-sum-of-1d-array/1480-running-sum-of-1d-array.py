@@ -8,6 +8,10 @@ class Solution(object):
         sum=0
         for i in range(len(nums)):
             sum=sum+nums[i]
-            runingSum.append(sum)
+            if(i>0):
+                runingSum.append(runingSum[i-1]+nums[i])
+            else:
+                runingSum.append(nums[0])
+                
             
         return (runingSum)
