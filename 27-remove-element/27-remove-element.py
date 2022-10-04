@@ -12,8 +12,7 @@ class Solution(object):
 
         left=0
         right=len(nums)-1
-        k=len(nums)
-        if k==0: #empty list
+        if len(nums)==0: #empty list
             return 0
 
 
@@ -25,7 +24,7 @@ class Solution(object):
             else:
                 left=left+1
                 
-        print(nums,left,right)
+        #print(nums,left,right)
 
         return(left)
 
