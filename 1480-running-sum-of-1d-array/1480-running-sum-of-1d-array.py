@@ -5,13 +5,11 @@ class Solution(object):
         :rtype: List[int]
         """
         runingSum=[]
-        sum=0
-        for i in range(len(nums)):
-            sum=sum+nums[i]
-            if(i>0):
-                runingSum.append(runingSum[i-1]+nums[i])
-            else:
-                runingSum.append(nums[0])
+        runingSum.append(nums[0])
+        for i in range(1,len(nums)):
+            runingSum.append(runingSum[i-1]+nums[i])
+
+               
                 
             
         return (runingSum)
